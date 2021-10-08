@@ -1,0 +1,5 @@
+name[0]="zara"
+name[1]="ayan"
+name[2]="daisy"
+echo "1st method : ${name[*]}"
+echo "2nd method : ${name[@]}"

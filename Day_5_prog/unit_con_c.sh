@@ -1,0 +1,10 @@
+l=60;
+w=40;
+plot_sq_feet=$(( l * w ));
+plot_sq_meter=`echo $plot_sq_feet | awk '{ print $0 / 10.7639 }'`;
+echo "Reactangular plot of 60 feet * 40 feet in meters:";
+echo $plot_sq_meter "m";
+plot_25=`echo $plot_sq_meter | awk '{ print $0 * 25 }'`;
+plot_25_acre=`echo $plot_25 |awk '{ print $0 / 4046.8564}'`;
+echo "area of 25 plot in acres:";
+echo $plot_25_acre "acre"; 
